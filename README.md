@@ -1,4 +1,4 @@
-# wbadawi.com
+# wbadawi.info
 
 Personal website for Waleed Albadawi — enterprise technology leader, integration architect, and digital transformation specialist.
 
@@ -64,7 +64,7 @@ All content is in plain HTML files. To update:
 
 ## Custom Domain
 
-The site is configured for `www.wbadawi.com` via the `CNAME` file. DNS must point to GitHub Pages IPs. See [GitHub's custom domain docs](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site) for details.
+The site is configured for `wbadawi.info` via the `CNAME` file. DNS must point to GitHub Pages IPs. See [GitHub's custom domain docs](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site) for details.
 
 ## Future Enhancements
 
