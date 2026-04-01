@@ -765,6 +765,44 @@ section {
   margin-bottom: 0;
 }
 
+/* --- Full Insight Article --- */
+.insight-full {
+  padding: 2.5rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.insight-full:first-child {
+  padding-top: 0;
+}
+
+.insight-full__body {
+  margin-top: 1.25rem;
+}
+
+.insight-full__body p {
+  font-size: 0.9375rem;
+  color: var(--color-text-light);
+  margin-bottom: 1rem;
+  line-height: 1.75;
+}
+
+.insight-full__body blockquote {
+  border-left: 3px solid var(--color-accent);
+  margin: 1.5rem 0;
+  padding: 0.75rem 1.5rem;
+  background: var(--color-surface);
+  font-style: italic;
+  color: var(--color-text-light);
+}
+
+.insight-full__body .insight-section {
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-style: normal;
+}
+
 /* --- Contact Form Area --- */
 .contact-info {
   display: grid;

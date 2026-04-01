@@ -43,6 +43,40 @@
   <section>
     <div class="container container--narrow">
 
+      <div class="insight-full fade-in">
+        <div class="insight-card__date">Payment Architecture &nbsp;·&nbsp; April 2026</div>
+        <h3 class="insight-card__title">Identity at the Core: Why NIN-Based Account Verification Changes the Risk Architecture of Real-Time Payments</h3>
+        <div class="insight-full__body">
+          <p>
+            In real-time payment systems, the weakest link is rarely the protocol — it is the moment of trust establishment before value moves. As Saudi banks continue their IPS rollout under Saudi Payments' operating rules, a quiet but consequential design decision is reshaping that trust calculus: anchoring Account Verification (AV) flows to the National Identification Number.
+          </p>
+          <blockquote>
+            Connecting national identity infrastructure to payment rails is not a compliance checkbox. It is a foundational risk architecture decision with strategic implications that extend well beyond the integration team.
+          </blockquote>
+          <p class="insight-section">From Account Lookup to Identity Confirmation</p>
+          <p>
+            Traditional account verification in IPS operates on proxy identifiers — mobile numbers, IBAN fragments, account aliases. These are useful for routing but carry inherent impersonation risk. Extending incoming AV requests to match against NIN fields transforms verification from a directory lookup into an identity assertion. The account must not only exist; its registered holder must be the person initiating the transaction.
+          </p>
+          <p>
+            This shift matters operationally because it creates a harder-to-forge signal at the pre-authorization stage. Fraudulent misdirected credit attempts — a growing concern as IPS transaction volumes accelerate — depend on the receiving bank's AV response being a weak confirmation. Identity-matched AV closes that gap.
+          </p>
+          <p class="insight-section">The Two-Step Protocol as a Risk Buffer</p>
+          <p>
+            The verify-hold-post design pattern implemented in the Core Payment API is the structural complement to identity-strengthened AV. By separating the verification and hold step from the posting step, the architecture creates an explicit decision checkpoint before funds settle. A fraudulent or erroneous transaction can be unwound at the hold-release stage without a reversal entry hitting the ledger.
+          </p>
+          <p>
+            This is governance embedded in protocol design — not a control layer bolted on afterward. The decision to implement a dedicated <code>DELETE /payments/{id}/hold</code> endpoint alongside the post path makes the abort path a first-class citizen of the payment flow, not an exception handler.
+          </p>
+          <p class="insight-section">Strategic Implications for Technology Leaders</p>
+          <p>
+            The banks that will lead in the Saudi payments landscape are not necessarily those with the fastest settlement pipes, but those that make their payment rails trustworthy enough to carry higher-value, more complex use cases — B2B flows, Request to Pay, cross-border IPS extensions. Identity-strengthened AV is the prerequisite for that expanded mandate.
+          </p>
+          <p>
+            Technology leaders should be asking: is our current AV implementation a gateway to stronger trust, or merely a box-checking exercise for Saudi Payments certification? The difference will determine whether your bank captures the ecosystem value of IPS or simply processes volume on rails built by someone else's strategy.
+          </p>
+        </div>
+      </div>
+
       <div class="insight-card fade-in">
         <div class="insight-card__date">Perspective</div>
         <h3 class="insight-card__title">Why Integration Architecture Is the Most Undervalued Discipline in Enterprise IT</h3>
