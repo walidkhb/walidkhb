@@ -44,6 +44,43 @@
     <div class="container container--narrow">
 
       <div class="insight-full fade-in">
+        <div class="insight-card__date">Integration Strategy &nbsp;·&nbsp; April 2026</div>
+        <h3 class="insight-card__title">Architecture Intelligence as a Strategic Asset: Why Reverse Engineering Your ESB Is Not a Cleanup Exercise</h3>
+        <div class="insight-full__body">
+          <p>
+            Most modernization programs fail not because of poor target architecture, but because of poor current-state knowledge. Organizations commit to migration roadmaps, cloud journeys, and platform consolidations with only a partial understanding of what they are actually running. The integration layer — the ESB, the API gateway, the message broker — is typically the least documented tier in the enterprise, yet the one that connects everything else.
+          </p>
+          <blockquote>
+            You cannot make sound architectural decisions about what to replace, what to migrate, and what to retire until you know, precisely, what exists. Systematically documenting a legacy platform is not a cleanup exercise. It is an act of institutional intelligence.
+          </blockquote>
+          <p class="insight-section">What 518 Repositories Actually Tell You</p>
+          <p>
+            When you reverse engineer 518 repositories across 16 integration domains — payments, core banking, open banking, compliance, identity, digital channels, trade finance, and more — the first thing you find is that the shape of your debt is not what you assumed. Security risks surface that were invisible in the annual risk register: a legacy framework running Log4j 1.2.x still in production, a centralized database gateway that violates every principle of service-oriented design, five duplicate library repositories with no clear canonical owner. None of these appeared in the last architecture review because no architecture review had actually looked.
+          </p>
+          <p>
+            The second thing you find is that regulatory exposure is larger than the compliance team believes. Across the open banking estate, zero services had been migrated to the current platform. Critical FAPI 2.0 security controls — Pushed Authorization Requests, JWT-Secured Authorization Response Mode, DPoP token binding — were absent entirely. SAMA's own mandated capabilities, including Confirmation of Funds, had no specification let alone implementation. These are not technical debts. They are compliance events that have not yet been triggered.
+          </p>
+          <p class="insight-section">The Invisible Architecture Tax</p>
+          <p>
+            Every organization running a legacy integration platform is paying an architecture tax — in engineering time spent navigating undocumented systems, in leadership decisions made on incomplete information, and in the accelerating cost of change as services accumulate hidden dependencies. What makes this tax insidious is that it is invisible until a migration project, a regulatory audit, or a production incident forces a reckoning.
+          </p>
+          <p>
+            The discipline of structured reverse engineering — domain by domain, service by service, producing functional requirements, low-level designs, API indexes, backend service maps, and migration work packages — converts invisible debt into a visible, manageable backlog. It transforms the architecture conversation from opinion-based to evidence-based. And crucially, it surfaces prioritization signals that no amount of strategic discussion can produce: which services are actively used, which are legacy anti-patterns, which have external regulatory deadlines attached, and which can simply be retired.
+          </p>
+          <p class="insight-section">Documentation as the Foundation for Delivery Speed</p>
+          <p>
+            There is a common executive instinct to deprioritize documentation work in favor of visible delivery. This instinct is understandable and consistently wrong. Teams that lack a current-state baseline move slower, not faster, because they spend their delivery capacity on rediscovery, rework, and risk avoidance. The cross-domain dependency map — payments depending on core banking, compliance, and notifications; open banking depending on customer data and payment initiation; digital channels consuming identity, customer, and payment rails — becomes the single most important input to release sequencing once it is made explicit.
+          </p>
+          <p>
+            Architecture intelligence is not a one-time deliverable. It is a living capability that must be maintained as systems evolve. But it has to start somewhere. For organizations that have been running complex integration estates without comprehensive documentation, the investment in structured reverse engineering typically yields its return within the first migration program it informs — in avoided rework, in de-risked cutovers, and in the confidence that comes from knowing, rather than guessing, what you are about to change.
+          </p>
+          <p>
+            Technology leaders who treat documentation as overhead are paying a hidden premium for every subsequent delivery. Those who treat it as a strategic input are building the foundation on which faster, safer, and more confident modernization becomes possible.
+          </p>
+        </div>
+      </div>
+
+      <div class="insight-full fade-in">
         <div class="insight-card__date">Payment Architecture &nbsp;·&nbsp; April 2026</div>
         <h3 class="insight-card__title">Identity at the Core: Why NIN-Based Account Verification Changes the Risk Architecture of Real-Time Payments</h3>
         <div class="insight-full__body">
