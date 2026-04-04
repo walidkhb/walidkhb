@@ -44,6 +44,47 @@
     <div class="container container--narrow">
 
       <div class="insight-full fade-in">
+        <div class="insight-card__date">Programme Architecture &nbsp;·&nbsp; April 2026</div>
+        <h3 class="insight-card__title">The Programme Hidden in the Documentation: How Domain Work Packages Become the Architecture of Migration Delivery</h3>
+        <div class="insight-full__body">
+          <p>
+            There is a moment in every large-scale modernization programme when the architecture work stops feeling like analysis and starts feeling like delivery design. It is the moment the functional requirements for a domain are complete, the gap analysis has surfaced what is missing, and the work packages have been sized and prioritized. At that point, the documentation is not supporting the programme. It is the programme.
+          </p>
+          <blockquote>
+            A well-structured domain work package is not a planning artifact. It is an architectural decision: it defines the boundary of a change, names the dependencies that constrain its sequencing, and makes explicit the scope that engineering teams will accept accountability for.
+          </blockquote>
+          <p class="insight-section">What Sixteen Domains of Work Packages Actually Produce</p>
+          <p>
+            When you systematically decompose an integration estate into functional requirements, low-level designs, API indexes, backend service maps, and prioritized work packages across all sixteen domains — payments, core banking, cards, customer, identity, compliance, notifications, government services, lending, trade finance, digital channels, corporate banking, open banking, investment, platform framework, and utilities — you produce something more valuable than a migration plan. You produce a topology of risk.
+          </p>
+          <p>
+            In the payments domain alone, fifteen work packages emerge with clear P1/P2/P3 prioritization. Fund transfer consolidation and idempotency implementation are P1 because duplicate service implementations and the absence of idempotency keys in a payment API represent live defects in the risk architecture, not technical improvements. Circuit breaker implementation across ICS, MoneyGram, HDFC, and Volante integrations is P1 for the same reason: the absence of a circuit breaker in a synchronous payment flow is not a missing feature, it is a single point of systemic failure. Observability, regression testing, and developer portal publishing are P2 and P3 — necessary, but not load-bearing for safety.
+          </p>
+          <p class="insight-section">Gap Analysis as the Language of Regulatory Risk</p>
+          <p>
+            The open banking domain work surfaces a pattern that technology leaders need to be able to translate for board-level audiences. Across Account Information, Payment Initiation, and Consent Management, the functional requirements contain a consistent category: <em>Gap — not implemented</em>. Pushed Authorization Requests, JWT-Secured Authorization Response Mode, DPoP token binding, time-bound consent with automatic expiry, consent-gated enforcement at the gateway layer — these are not theoretical FAPI 2.0 improvements. They are the security controls that SAMA's open banking framework requires, documented with precision for the first time because the reverse engineering finally produced a complete picture of what exists and what does not.
+          </p>
+          <p>
+            Confirmation of Funds — a SAMA-mandated capability that enables licensed TPPs to verify sufficient balance before initiating a payment — has no specification and no implementation. This is not an architecture gap. It is a compliance event waiting for a trigger date. The work package structure converts that exposure from an invisible risk into a named deliverable with an effort estimate and an owner.
+          </p>
+          <p class="insight-section">Sequencing Is Strategy</p>
+          <p>
+            The most consequential output of domain-level work packaging is not any individual work package — it is the dependency graph between them. Fund transfer consolidation must precede idempotency implementation. IIB-to-ACE migration depends on consolidation. Circuit breakers depend on the consolidated service boundary being stable. Open banking payment initiation depends on the underlying payment rail being idempotent. Identity verification depends on the NIN registry integration being stable before IPS account verification can rely on it.
+          </p>
+          <p>
+            Programme managers who inherit this structure can build a release sequence without an architect in the room, because the dependencies are explicit and the priorities are evidence-based rather than negotiated. Technology leaders who have lived through programmes where sequencing was debated based on politics and preference understand the value of a dependency graph that was derived from the systems themselves.
+          </p>
+          <p class="insight-section">The Delivery Architecture That Enables Parallel Teams</p>
+          <p>
+            Domain work packages also solve the organizational parallelism problem. A team working on payments consolidation and a team working on open banking consent management can operate without coupling if their domain boundaries are well-defined and their shared dependencies — the ICS core banking adapter, the identity verification service, the notification framework — are treated as stable interfaces rather than in-flight changes. The domain decomposition is simultaneously a technical boundary and a team topology.
+          </p>
+          <p>
+            For technology leaders managing large integration portfolios, the takeaway is direct: the investment in structured functional requirements and work packaging across the full estate is not preliminary to delivery. It is the mechanism by which a programme of otherwise unmanageable complexity becomes safe to execute. The documentation does not describe the programme. In the deepest sense, it is the programme.
+          </p>
+        </div>
+      </div>
+
+      <div class="insight-full fade-in">
         <div class="insight-card__date">Integration Strategy &nbsp;·&nbsp; April 2026</div>
         <h3 class="insight-card__title">Architecture Intelligence as a Strategic Asset: Why Reverse Engineering Your ESB Is Not a Cleanup Exercise</h3>
         <div class="insight-full__body">
