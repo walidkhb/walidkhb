@@ -1,82 +1,45 @@
-# wbadawi.info
+# Waleed Albadawi
 
-Personal website for Waleed Albadawi — enterprise technology leader, integration architect, and digital transformation specialist.
+**Enterprise Technology Executive | VP, Enterprise Integration | Tech100 Strategic Leader of the Future**
 
-## Stack
+---
 
-- **Pure HTML/CSS/JS** — no build tools, no dependencies
-- **GitHub Pages** — hosted and deployed automatically via GitHub Actions
-- **Google Fonts** — Playfair Display (headings) + Inter (body)
-- **SVG icons** — inline, no external icon libraries
+I help banks and large organizations turn technology fragmentation into scalable enterprise capability — by aligning architecture, operating model, governance, and engineering execution to deliver faster, safer, and more strategic growth.
 
-## Structure
+### What I Do
 
-```
-├── index.html          # Home — hero, capabilities, featured work, CTA
-├── about.html          # About — background, philosophy, values
-├── experience.html     # Experience — career timeline, domain expertise
-├── projects.html       # Initiatives — strategic programs & open source
-├── expertise.html      # Expertise — skills, technologies, methodologies
-├── resume.html         # Resume/CV — printable, comprehensive
-├── contact.html        # Contact — details, areas of interest
-├── blog.html           # Insights — thought leadership perspectives
-├── 404.html            # Custom 404 page
-├── CNAME               # Custom domain configuration
-├── robots.txt          # Search engine directives
-├── sitemap.xml         # XML sitemap for SEO
-├── assets/
-│   ├── css/style.css   # Complete design system & styles
-│   ├── js/main.js      # Navigation, scroll effects, animations
-│   └── img/favicon.svg # SVG favicon
-└── .github/
-    └── workflows/
-        └── pages.yml   # GitHub Actions deployment workflow
-```
+- **Enterprise Platform Strategy** — Transforming integration from a support function into a governed enterprise capability with clear ownership, shared standards, and measurable business outcomes
+- **Organizational Transformation** — Redesigning operating models, decision rights, and team structures so technology investments create lasting institutional value
+- **Governance That Accelerates** — Building standards and controls that improve quality and reduce risk without slowing delivery
+- **Regulatory & Ecosystem Readiness** — Preparing organizations for open banking, real-time payments, and fintech ecosystem participation
 
-## Setup
+### Current Role
 
-1. **Fork or clone** this repository
-2. **Enable GitHub Pages**: Settings > Pages > Source: GitHub Actions
-3. **Custom domain** (optional): Update `CNAME` with your domain, then configure DNS:
-   - `A` record → `185.199.108.153` (and .109, .110, .111)
-   - `CNAME` record for `www` → `walidkhb.github.io`
+**VP, Enterprise Integration** at Saudi Investment Bank (SAIB), Riyadh
 
-## Updating Content
+Leading a team of 40+ across enterprise integration architecture, API strategy, digital product enablement, and regulatory alignment — supporting the bank's digital transformation agenda and Saudi Vision 2030.
 
-All content is in plain HTML files. To update:
+### Career Highlights
 
-1. Edit the relevant `.html` file
-2. Commit and push to `master`
-3. GitHub Actions deploys automatically (typically under 60 seconds)
+- **14+ years** across banking and government technology in KSA and Jordan
+- **Tech100 — Strategic Leader of the Future** (Saudi Arabia Edition)
+- Built integration architecture for **Absher** — one of the largest government digital platforms in the Middle East
+- Created the bank's **Digital Factory** — transforming engineering culture from waterfall to continuous delivery
+- Designed **API monetization strategy** contributing to 8% annual profit increase
+- Built **real-time fraud detection** reducing fraud risk by 35%
+- Led **zero-downtime legacy modernization** across mission-critical banking systems
 
-### Key files to personalize:
-- **`index.html`** — Hero text, capability cards, featured initiatives
-- **`about.html`** — Background story, philosophy, values
-- **`experience.html`** — Career timeline entries
-- **`expertise.html`** — Skill tags and categories
-- **`resume.html`** — CV content (also supports Print/PDF)
-- **`contact.html`** — Contact details and social links
+### Certifications
 
-### Design tokens (in `assets/css/style.css`):
-- Colors: `--color-primary`, `--color-accent`, etc.
-- Fonts: `--font-heading`, `--font-body`
-- Spacing: `--space-xs` through `--space-2xl`
+`IBM Certified Integration Developer` `IBM Certified Solution Architect - Cloud Pak for Integration` `AWS Solutions Architect` `Google Cloud Professional Architect` `Azure Solutions Architect Expert` `TOGAF 9 Certified` `Certified Kubernetes Administrator` `ISO 27001 Lead Implementer`
 
-## Custom Domain
+### Connect
 
-The site is configured for `wbadawi.info` via the `CNAME` file. DNS must point to GitHub Pages IPs. See [GitHub's custom domain docs](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site) for details.
+- **Website:** [www.wbadawi.info](https://www.wbadawi.info)
+- **LinkedIn:** [linkedin.com/in/walidkhb](https://linkedin.com/in/walidkhb)
+- **Email:** walidkhb@gmail.com
+- **Location:** Riyadh, Saudi Arabia
 
-## Future Enhancements
+---
 
-- Add a profile photo to the hero and about sections
-- Expand blog/insights with full article pages
-- Add dark mode toggle
-- Add LinkedIn and other social media links
-- Add project screenshots and case study detail pages
-- Implement a contact form via Formspree or similar
-- Add structured data (JSON-LD) for enhanced search results
-- Add Open Graph images for social sharing previews
-
-## License
-
-MIT
+*I'm always open to meaningful conversations about enterprise transformation, platform strategy, organizational design, and building technology capabilities that scale institutions — not just systems.*
